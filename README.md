@@ -1,6 +1,6 @@
 # samples
 
-This is a collection of some of my favorite programming problems. Here are the descriptions.
+This is a collection of solutions to some of my favorite programming problems. Here are the descriptions.
 
 ## boyGirl.cpp
 
