@@ -14,7 +14,7 @@ using namespace std;
 
 // This program will probably only make sense after you run it!
 
-/* We use a tree to store our data. Here is it's node.
+/* We use a tree to store our data. Here is its node.
 */
 class Node
 {
