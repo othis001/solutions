@@ -1,5 +1,5 @@
 /*******************************
- * boygirl.cpp by Oliver Thistlethwaite
+ * boyGirl.cpp by Oliver Thistlethwaite
  *
  * Purpose: This is a program that takes as input a string of the form
  *          GGBGBB which represents a seating arrangment of boys and 

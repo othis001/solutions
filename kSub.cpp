@@ -1,5 +1,5 @@
 /*******************************
- * ksub.cpp by Oliver Thistlethwaite
+ * kSub.cpp by Oliver Thistlethwaite
  *
  * Purpose: This is a program that takes as input an array and a
  *          number K and determines how many subsequences have

@@ -1,5 +1,5 @@
 /*******************************
- * selfsimilarity.cpp by Oliver Thistlethwaite
+ * selfSimilarity.cpp by Oliver Thistlethwaite
  *
  * Purpose: This is a program that takes as input a string and determines its self-similarity
  *          or the total number of places in all the beginnings of its substrings that match
