@@ -70,11 +70,29 @@ class Tree
            }    
            return;
        }
+       /* This function adds a question to a thing
+       */
+       bool addQuestion(string thing, string question)
+       {
+           if(address.find(thing) == address.end() )
+           {
+               return false;
+           }
+
+           ( address[thing] )-> questions.push_back(question);
+
+           return true;
+       }
 
        /* This function counts how many times a query occurs.
        */       
        int count(string thing, string question)
        {
+           if(address.find(thing) == address.end() )
+           {
+               return -1;
+           }
+
            return countit( address[thing] , question);
        }
 
@@ -106,7 +124,7 @@ class Tree
 
 int main() 
 {
-    int i, pos, K, M;
+    int i, pos, K, M, count;
     string line, word, thing, question;
 
     cout << "This program implements a simple query system.\n" << endl;
@@ -130,13 +148,9 @@ int main()
         thing = line.substr(0, pos);
         question = line.substr(pos+2);
    
-        if(data.address.find(thing) == data.address.end() )
+        if( ! data.addQuestion(thing, question) )
         {
             cout << "Topic not found!" << endl;
-        }
-        else
-        {
-            ( data.address[thing] )-> questions.push_back(question);
         }
     }
 
@@ -155,13 +169,14 @@ int main()
         thing = line.substr(0, pos);
         question = line.substr(pos+2);
 
-        if(data.address.find(thing) == data.address.end() )
+        count = data.count(thing, question);
+        if(count == -1)
         {
             cout << "Topic not found!" << endl;
         }
         else
         {
-            cout << "This query occurred " << data.count(thing, question) << " times." << endl;
+            cout << "This question occurred " << count << " times." << endl;
         }    
     }
     return 0;
