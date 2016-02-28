@@ -18,6 +18,7 @@ in a row. The teacher wants to give out candy to the students
 subject to 2 constraints.
 
 1) Every student gets at least one piece of candy.
+
 2) If a student scored higher than one of their neighbors,
    they must receive more candy than that neighbor.
 
