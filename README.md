@@ -2,7 +2,7 @@
 
 This is a collection of some of my favorite programming problems. Here are the descriptions.
 
-## boygirl.cpp
+## boyGirl.cpp
 
 This is a program that takes as input a string of the form
 GGBGBB which represents a seating arrangment of boys and 
@@ -24,7 +24,7 @@ subject to 2 constraints.
 
 This program will calculate the minimum amount of candy needed.
 
-## ksub.cpp
+## kSub.cpp
 
 This is a program that takes as input an array and a
 number K and determines how many subsequences have
@@ -53,7 +53,7 @@ This is a program that if given directions for a robot
 that it will repeatedly follow, will determine whether 
 the robot will remain in a bounded area for all time.
 
-## selfsimilarity.cpp
+## selfSimilarity.cpp
 
 This is a program that takes as input a string and determines its self-similarity
 or the total number of places in all the beginnings of its substrings that match
