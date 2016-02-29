@@ -3,7 +3,7 @@
  *
  * Purpose: This function takes as input a matrix where each entry is either
  *          0 or 1. We assume the top left and bottom right entries are 1 and
- *          then count how many paths of 1s are between them. While on a path
+ *          then count how many paths of 1s are between them. While on a path,
  *          we may only move right or down.
  ******************************/
 
