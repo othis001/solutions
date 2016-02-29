@@ -1,5 +1,5 @@
 /*******************************
- * subseqFlip.cpp by Oliver Thistlethwaite
+ * matrixRoute.cpp by Oliver Thistlethwaite
  *
  * Purpose: This function takes as input a matrix where each entry is either
  *          0 or 1. We assume the top left and bottom right entries are 1 and
