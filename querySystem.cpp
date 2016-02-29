@@ -70,7 +70,7 @@ class Tree
            }    
            return;
        }
-       /* This function adds a question to a thing
+       /* This function adds a question to a thing.
        */
        bool addQuestion(string thing, string question)
        {
@@ -120,7 +120,7 @@ class Tree
        }
 
        Node *root; // The root of the tree.
-       map <string, Node *> address; // A map to store where topic's nodes are located.
+       map <string, Node *> address; // A map to store where topics nodes are located.
 };
 
 int main() 
