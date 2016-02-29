@@ -96,6 +96,7 @@ class Tree
            return countit( address[thing] , question);
        }
 
+   private:
        /* This is a recursive function that goes through the tree seeing if any children
           have a corresponding question.
        */
