@@ -30,7 +30,7 @@ This is a program that takes as input an array and a
 number K and determines how many subsequences have
 sums that are divisible by K.
 
-##matrixRoute
+##matrixRoute.cpp
 
 This function takes as input a matrix where each entry is either
 0 or 1. We assume the top left and bottom right entries are 1 and
@@ -41,10 +41,10 @@ we may only move right or down.
 
 This is a program that takes as input a string consisting of lower-case and
 and capital letters and determines the last position that a "pair" occurs.
-A pair is defined to be a capital letter followed immediately by its lower-
-case form. Also once two letters pair up, they are removed from further
-consideration, similar to how pieces cancel out in Dr. Mario. For example,
-ABba would have 2 valid pairs. 
+A pair is defined to be a capital letter followed immediately by its lower-case
+form. Also once two letters pair up, they are removed from further consideration,
+ similar to how pieces cancel out in Dr. Mario. For example,
+ABba would have 2 valid pairs.
 
 ## polish.cpp
 
