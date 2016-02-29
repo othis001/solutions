@@ -30,6 +30,13 @@ This is a program that takes as input an array and a
 number K and determines how many subsequences have
 sums that are divisible by K.
 
+#matrixRoute
+
+This function takes as input a matrix where each entry is either
+0 or 1. We assume the top left and bottom right entries are 1 and
+then count how many paths of 1s are between them. While on a path
+we may only move right or down.
+
 ## pairs.cpp
 
 This is a program that takes as input a string consisting of lower-case and
@@ -58,6 +65,13 @@ the robot will remain in a bounded area for all time.
 This is a program that takes as input a string and determines its self-similarity
 or the total number of places in all the beginnings of its substrings that match
 the whole string.
+
+## subseqFlip.cpp
+
+This is a program that takes a binary string as input and then
+flips all the bits in a substring to obtain a new binary string
+with the highest number of 1s.
+
 
 ## stringPerm.cpp
 
