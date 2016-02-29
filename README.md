@@ -30,7 +30,7 @@ This is a program that takes as input an array and a
 number K and determines how many subsequences have
 sums that are divisible by K.
 
-#matrixRoute
+##matrixRoute
 
 This function takes as input a matrix where each entry is either
 0 or 1. We assume the top left and bottom right entries are 1 and
