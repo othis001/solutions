@@ -2,9 +2,9 @@
  * weight.cpp by Oliver Thistlethwaite
  *
  * Purpose: This is a program that takes as input an array and then
-            an array of weights where each weight corresponds to the
-            corresponding entry in the first array. We then return
-            the maximum weight formed by an INCREASING subsequence. 
+ *          an array of weights where each weight corresponds to the
+ *          corresponding entry in the first array. We then return
+ *          the maximum weight formed by an INCREASING subsequence. 
  ******************************/
 #include <iostream>
 #include <map>
