@@ -39,7 +39,7 @@ long long maxw(int A[][2], int size)
         /* If there is already an entry in best with the same value and
            a higher weight, we don't touch it.
         */
-         if(best[ A[i][0] ] < max)         
+        if(best[ A[i][0] ] < max)         
         {                        
             best[ A[i][0] ] = max; // Add A[i] to best.
 
