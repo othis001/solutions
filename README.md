@@ -78,3 +78,11 @@ with the highest number of 1s.
 This is a program that takes as input a string and then a list of positions
 we are allowed to swap. It will then return the string with the highest
 lexicographical order, we can obtain.
+
+## weight.cpp
+
+This is a program that takes as input an array and then
+an array of weights where each weight corresponds to the
+corresponding entry in the first array. We then return
+the maximum weight formed by an INCREASING subsequence. 
+
