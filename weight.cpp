@@ -13,7 +13,7 @@ using namespace std;
 
 long long maxw(int A[][2], int size)
 {
-    int i; long long max;
+    int i; long long max, total_max = 0;
 
     /* This map best stores a list of values together with the highest
        weight that corresponds to a subsequence starting at each value.
@@ -42,6 +42,7 @@ long long maxw(int A[][2], int size)
         if(best[ A[i][0] ] < max)         
         {                        
             best[ A[i][0] ] = max; // Add A[i] to best.
+            if(max > total_max) total_max = max; // This is the highest subsequence.
 
             /* We do this last step to remove all entries with lower values
                and lower weights than what we just put in, since these entries
@@ -55,14 +56,8 @@ long long maxw(int A[][2], int size)
                 else itr++;
             }
         }       
-    }
-    
-    max = 0;
-    for(itr = best.begin(); itr != best.end(); itr++)
-    {
-        if(itr->second > max) max = itr->second;        
     }    
-    return max;
+    return total_max;
 }
 
 int main() 
