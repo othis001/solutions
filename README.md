@@ -24,6 +24,13 @@ subject to 2 constraints.
 
 This program will calculate the minimum amount of candy needed.
 
+## connections.cpp
+
+This function takes as input an array of positive integers that
+represent positions of towns on a line and then an array of
+their populations. We calculate the total amount of wire needed
+to connect each person to each other person. 
+
 ## kSub.cpp
 
 This is a program that takes as input an array and a
