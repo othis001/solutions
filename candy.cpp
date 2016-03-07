@@ -57,7 +57,7 @@ int countcandy(vector<int> theinput)
     amount = 0;
     for(i=1; i<=size; i++)
     {
-        amount = amount + candy[i];
+        amount += candy[i];
     }
     return amount;
 }

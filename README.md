@@ -79,6 +79,10 @@ This is a program that takes a binary string as input and then
 flips all the bits in a substring to obtain a new binary string
 with the highest number of 1s.
 
+## subsetsXOR.cpp
+
+This is a program that takes an input an array of nonnegative integers.
+It will then compute the sum of the XORs of all the subsets.
 
 ## stringPerm.cpp
 
