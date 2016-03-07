@@ -14,36 +14,36 @@ using namespace std;
 long long XORsubsets(vector<int> input)
 {
      int k, i, size = input.size();
-     long long total = 0;
 
     /* First we count the number of entries that have the kth bit set for each
-       0<=k<30 and store that information in kbitset.
+       0<=k<31 and store that information in bitset.
     */
-    int kbitset[31];
+    int bitset[31];
     for(k=0; k<31; k++)
     {
-        kbitset[k] = 0;
+        bitset[k] = 0;
         for(i=0; i<size; i++)
         {
-            if( (input[i] & (1 << k)) != 0) kbitset[k]++;
+            if( (input[i] & (1 << k)) != 0) bitset[k]++;
         }
     }
  
-    total = 0;
+    /* Now we traverse each bit position. Any choice of subset with an odd number
+       of 1s in the kth positions will contribute a 2^k to the total sum. The number
+       of subsets that will contribute a 2^k will be the number of ways to chose
+       a subset where each element has a 0 in the kth position times the number
+       of ways to choose a subset of odd size where each element has a 1 in the kth
+       position. If you do the math, you will find this number is always 2^(size-1)
+       provided at least one entry has a 1 in its kth bit position. The key is to
+       realize exactly half of all subsets have odd size. So if we multiply
+       this number by 2^k, we obtain the total contribution.
+    */
+    long long total = 0, number = pow(2, size - 1);
     for(k=0; k<31; k++)
     {
-        /* Now we traverse each bit position. Any choice of subset with an odd number
-           of 1s in the kth positions will contribute a 2^k to the total sum. The number
-           of subsets that will contribute a 2^k will be the number of ways to chose
-           a subset where each element has a 0 in the kth position times the number
-           of ways to choose a subset of odd size where each element has a 1 in the kth
-           position. If you do the math, you will find this number is always 2^(size-1)
-           provided at least one entry has a 1 in its kth bit position. So if we multiply
-           this number by 2^k, we obtain the total contribution.
-        */
-        if(kbitset[k] != 0)
+        if(bitset[k] != 0)
         {
-            total += pow(2, k + size - 1);
+            total += pow(2, k) * number;
         }
     }
     
