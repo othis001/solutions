@@ -19,8 +19,8 @@ long long XORsubsets(vector<int> input)
     /* First we count the number of entries that have the kth bit set for each
        0<=k<30 and store that information in kbitset.
     */
-    int kbitset[30];
-    for(k=0; k<30; k++)
+    int kbitset[31];
+    for(k=0; k<31; k++)
     {
         kbitset[k] = 0;
         for(i=0; i<size; i++)
@@ -30,7 +30,7 @@ long long XORsubsets(vector<int> input)
     }
  
     total = 0;
-    for(k=0; k<30; k++)
+    for(k=0; k<31; k++)
     {
         /* Now we traverse each bit position. Any choice of subset with an odd number
            of 1s in the kth positions will contribute a 2^k to the total sum. The number
