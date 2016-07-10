@@ -10,20 +10,6 @@ girls in row. The program will then calculate the minimum
 numbers of swaps necessary to ensure K girls will be seated
 together. Note we may only swap adjacent seats.
 
-## candy.cpp
-
-This is a program that takes as input an array of scores
-where the ith score corresponds to the ith student sitting
-in a row. The teacher wants to give out candy to the students
-subject to 2 constraints.
-
-1) Every student gets at least one piece of candy.
-
-2) If a student scored higher than one of their neighbors,
-   they must receive more candy than that neighbor.
-
-This program will calculate the minimum amount of candy needed.
-
 ## connections.cpp
 
 This function takes as input an array of positive integers that
