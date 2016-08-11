@@ -30,15 +30,6 @@ This function takes as input a matrix where each entry is either
 then count how many paths of 1s are between them. While on a path
 we may only move right or down.
 
-## pairs.cpp
-
-This is a program that takes as input a string consisting of lower-case and
-and capital letters and determines the last position that a "pair" occurs.
-A pair is defined to be a capital letter followed immediately by its lower-case
-form. Also once two letters pair up, they are removed from further consideration,
- similar to how pieces cancel out in Dr. Mario. For example,
-ABba would have 2 valid pairs.
-
 ## polish.cpp
 
 This is a simple program that implements a reverse polish calculator.
