@@ -1,4 +1,4 @@
-# samples
+# solutions
 
 This is a collection of solutions to some of my favorite programming problems. Here are the descriptions.
 
